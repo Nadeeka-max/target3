@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<android.support.v7.widget.Toolbar-->
+    <!--android:id="@+id/toolbar"-->
+    <!--android:minHeight="?attr/actionBarSize"-->
+    <!--android:background="@color/colorPrimary"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="56dp">-->
+    <!--&lt;!&ndash;app:titleTextAppearance="@style/Toolbar.TitleText"&ndash;&gt;-->
+    <!--</android.support.v7.widget.Toolbar>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRegistrationName"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:inputType="textPersonName"
+                android:maxLength="16"
+                android:singleLine="true" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRegistrationEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:inputType="textEmailAddress"
+                android:maxLength="16"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact No"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRegistrationContactNo"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRegistrationUsername"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:inputType="textPersonName"
+                android:maxLength="16"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtRegistrationPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ellipsize="start"
+                android:gravity="left"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="15dp"
+            android:text="Register"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
